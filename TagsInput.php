@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @link http://www.yiiframework.com/
  * @copyright Copyright (c) 2008 Yii Software LLC
@@ -48,14 +49,9 @@ class TagsInput extends InputWidget
 
     public function registerScript()
     {
-<<<<<<< HEAD:yii/tagsinput/TagsInput.php
-        if (!empty($this->clientOptions)) {
-=======
->>>>>>> Refactor:TagsInput.php
-            $clientOptions = empty($this->clientOptions) ? '' : Json::encode($this->clientOptions);
-            $js = "jQuery('#{$this->options["id"]}').tagsInput({$clientOptions});";
-            $this->getView()->registerJs($js);
-        
+        $clientOptions = empty($this->clientOptions) ? '' : Json::encode($this->clientOptions);
+        $js = "jQuery('#{$this->options["id"]}').tagsInput({$clientOptions});";
+        $this->getView()->registerJs($js);
     }
 
     public function registerEvent()
