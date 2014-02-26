@@ -57,7 +57,7 @@ class TagsInput extends InputWidget
     public function registerEvent()
     {
         if (!empty($this->clientEvents)) {
-            $js = array();
+            $js = [];
             foreach ($this->clientEvents as $event => $handle) {
                 $js[] = "jQuery('#{$this->options["id"]}').on('$event',$handle);";
             }
