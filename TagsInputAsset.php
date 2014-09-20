@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @link http://www.yiiframework.com/
  * @copyright Copyright (c) 2008 Yii Software LLC
@@ -14,15 +15,11 @@ use Yii;
  * @author Nghia Nguyen <yiidevelop@hotmail.com>
  * @since 2.0
  */
-class TagsInputAsset extends \yii\web\AssetBundle
-{
-	public $sourcePath = '@vendor/yiidoc/yii2-tagsinput/assets';
-    public $depends = ['yii\web\JqueryAsset'];
+class TagsInputAsset extends \yii\web\AssetBundle {
 
-    public function init()
-    {
-        $this->js[] = YII_DEBUG ? 'js/jquery.tagsinput.js' : 'js/jquery.tagsinput.min.js';
-        $this->css[] = YII_DEBUG ? 'css/tagsinput.css' : 'css/tagsinput.min.css';
-    }
+    public $sourcePath = '@bower/bootstrap-tagsinput';
+    public $depends = ['yii\web\JqueryAsset'];
+    public $js = ['dist/bootstrap-tagsinput.js'];
+    public $css = ['dist/bootstrap-tagsinput.css'];
 
 }
