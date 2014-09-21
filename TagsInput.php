@@ -17,7 +17,8 @@ use yii\helpers\Json;
  * @author Nghia Nguyen <yiidevelop@hotmail.com>
  * @since 2.0
  */
-class TagsInput extends InputWidget {
+class TagsInput extends InputWidget
+{
 
     public $options = ['class' => 'form-control'];
     public $clientOptions = [];
@@ -32,7 +33,7 @@ class TagsInput extends InputWidget {
                 $this->options['id'] = $this->getId();
             }
         }
-        $this->registerAssetBundle();
+        TagsInputAsset::register($this->getView());
         $this->registerScript();
         $this->registerEvent();
     }
@@ -44,11 +45,6 @@ class TagsInput extends InputWidget {
         } else {
             echo Html::input('text', $this->name, $this->value, $this->options);
         }
-    }
-
-    public function registerAssetBundle()
-    {
-        TagsInputAsset::register($this->getView());
     }
 
     public function registerScript()

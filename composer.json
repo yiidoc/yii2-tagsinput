@@ -1,6 +1,6 @@
 {
     "name": "yiidoc/yii2-tagsinput",
-    "description": "Bootstrap Tags Input is a jQuery plugin providing a Twitter Bootstrap user interface for managing tags. Forked from @TimSchlechter for Yii2 framework",
+    "description": "The Gii extension for the Yii framework",
     "keywords": ["yii", "gii", "code generator"],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
@@ -11,12 +11,13 @@
     "authors": [
         {
             "name": "Nghia Nguyen",
-            "email": "yiidevelop@gmail.com"
+            "email": "yiidevelop@gmail.com",
+            "homepage": "http://yiidev.com"
         }
     ],
     "require": {
         "yiisoft/yii2": "*",
-        "bower-asset/bootstrap-tagsinput": "1.*"
+        "bower-asset/bootstrap-tagsinput": ">=0.4.2"
     },
     "autoload": {
         "psr-4": {
