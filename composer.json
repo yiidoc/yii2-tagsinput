@@ -1,6 +1,6 @@
 {
     "name": "yiidoc/yii2-tagsinput",
-    "description": "The Gii extension for the Yii framework",
+    "description": "The TagsInput extension for the Yii framework",
     "keywords": ["yii", "gii", "code generator"],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
@@ -11,8 +11,7 @@
     "authors": [
         {
             "name": "Nghia Nguyen",
-            "email": "yiidevelop@gmail.com",
-            "homepage": "http://yiidev.com"
+            "email": "zinzinday@gmail.com"
         }
     ],
     "require": {
